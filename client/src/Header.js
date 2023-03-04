@@ -7,7 +7,7 @@ import sentidos from './assets/sentidos.png';
 export default function Header() {
   const { setUserInfo, userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch('http://localhost:4000/profile', {
+    fetch('https://sentidos-blog.onrender.com/profile', {
       credentials: 'include',
     }).then(response => {
       response.json().then(userInfo => {
@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   function logout() {
-    fetch('http://localhost:4000/logout', {
+    fetch('https://sentidos-blog.onrender.com/logout', {
       credentials: 'include',
       method: 'POST',
     });

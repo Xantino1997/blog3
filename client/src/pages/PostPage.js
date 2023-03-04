@@ -36,7 +36,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img className="post-final" src={`http://localhost:4000/${postInfo.cover}`} alt="" />
+        <img className="post-final" src={`https://sentidos-blog.onrender.com/${postInfo.cover}`} alt="" />
       </div>
       <div className="content" dangerouslySetInnerHTML={{ __html: postInfo.content }} />
     </div>

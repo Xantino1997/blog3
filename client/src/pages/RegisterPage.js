@@ -11,7 +11,7 @@ export default function RegisterPage() {
     formData.append("username", username);
     formData.append("password", password);
     formData.append("profilePicture", profilePicture);
-    const response = await fetch('http://localhost:4000/register', {
+    const response = await fetch('https://sentidos-blog.onrender.com/register', {
       method: "POST",
       body: formData,
     });
